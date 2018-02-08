@@ -1,5 +1,6 @@
 package psr.debesson.novel.domain;
 
+import java.util.Date;
 import java.util.Objects;
 
 public class NovelSummary {
@@ -8,6 +9,10 @@ public class NovelSummary {
     private String title;
 
     private String subtitle;
+
+    private Date startDate;
+
+    private Date targetedEndDate;
 
     private Premise premise;
 
@@ -38,6 +43,22 @@ public class NovelSummary {
         this.subtitle = subtitle;
     }
 
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getTargetedEndDate() {
+        return targetedEndDate;
+    }
+
+    public void setTargetedEndDate(Date targetedEndDate) {
+        this.targetedEndDate = targetedEndDate;
+    }
+
     public Premise getPremise() {
         return premise;
     }
@@ -63,6 +84,10 @@ public class NovelSummary {
     public String toString() {
         return "NovelSummary{" +
                 "id=" + id +
+                ", title='" + title + '\'' +
+                ", subtitle='" + subtitle + '\'' +
+                ", startDate=" + startDate +
+                ", targetedEndDate=" + targetedEndDate +
                 ", premise=" + premise +
                 '}';
     }

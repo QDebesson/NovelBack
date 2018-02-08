@@ -44,13 +44,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>psr.debesson</groupId>
-            <artifactId>novelEntity</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
 
-        <!-- scope provided because the processor is only needed at compile time-->
         <dependency>
             <groupId>fr.xebia.extras</groupId>
             <artifactId>selma-processor</artifactId>
@@ -58,7 +52,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- This is the only real dependency you will have in your binaries -->
         <dependency>
             <groupId>fr.xebia.extras</groupId>
             <artifactId>selma</artifactId>

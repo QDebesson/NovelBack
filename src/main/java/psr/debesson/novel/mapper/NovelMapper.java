@@ -30,7 +30,6 @@ public abstract class NovelMapper {
     })
     public abstract NovelSummary asNovelSummary(NovelSummaryEntity novelSummaryEntity);
 
-
     @Maps(withCustomFields = {
             @Field({"NovelSummary.id", "novelEntity.id"}),
             @Field({"NovelSummary.premise", "NovelSummaryEntity.premiseEntity"}),

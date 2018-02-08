@@ -22,6 +22,8 @@
 :summary = <<
 {
 	"novel_id": 1,
+	"title": "Le Renégat",
+	"subtitle": "La Guerre Primordiale, tome 1",
 	"premise": {
 		   "fullPremise": "En Walkenmaril, Araya Daucthia se préparait à épouser le Prince Laam lorsqu'elle est appelée à devenir Magicienne, mais face à la menace du Renégat et de ses attaques, comment est-elle supposée y parvenir ?",
 		   "character": "Araya Daucthia (16, Princesse-Magicienne en devenir)",
@@ -42,7 +44,7 @@ GET http://localhost:8080/novel
 POST http://localhost:8080/novel
 Content-Type: application/json
 
-:tome3
+:tome1
 
 #
 # Delete a novel
