@@ -1,20 +1,20 @@
 :tome1 = <<
 {
-	"title": "Le RenÃ©gat",
+	"title": "Le Renégat",
 	"subtitle": "La Guerre Primordiale, tome 1"
 }
 #
 
 :tome2 = <<
 {
-	"title": "Par delÃ  les mers",
+	"title": "La Chute d'un Empire",
 	"subtitle": "La Guerre Primordiale, tome 2"
 }
 #
 
 :tome3 = <<
 {
-	"title": "Par delÃ  les Ã©toiles",
+	"title": "Le Conflit Éternel",
 	"subtitle": "La Guerre Primordiale, tome 3"
 }
 #
@@ -22,15 +22,15 @@
 :summary = <<
 {
 	"novel_id": 1,
-	"title": "Le RenÃ©gat",
+	"title": "Le Renégat",
 	"subtitle": "La Guerre Primordiale, tome 1",
 	"premise": {
-		   "fullPremise": "En Walkenmaril, Araya Daucthia se prÃ©parait Ã  Ã©pouser le Prince Laam lorsqu'elle est appelÃ©e Ã  devenir Magicienne, mais face Ã  la menace du RenÃ©gat et de ses attaques, comment est-elle supposÃ©e y parvenir ?",
+		   "fullPremise": "En Walkenmaril, Araya Daucthia se préparait à épouser le Prince Laam lorsqu'elle est appelée à devenir Magicienne, mais face à la menace du Renégat et de ses attaques, comment est-elle supposée y parvenir ?",
 		   "character": "Araya Daucthia (16, Princesse-Magicienne en devenir)",
 		   "situation": "Walkenmaril (an 247 de la Dynastie Walken) (an 3651 Terrestre)",
-		   "objective": "Parvenir Ã  devenir Magicienne et rÃ©gner aux cÃ´tÃ©s du Prince Laam",
-		   "opponent": "Le RenÃ©gat",
-		   "disaster": "Attaque Ã  la Passe du CrÃ©puscule"
+		   "objective": "Parvenir à devenir Magicienne et régner aux côtés du Prince Laam",
+		   "opponent": "Le Renégat",
+		   "disaster": "Attaque à la Passe du Crépuscule"
 	}
 }
 #
@@ -44,17 +44,17 @@ GET http://localhost:8080/novel
 POST http://localhost:8080/novel
 Content-Type: application/json
 
-:tome1
+:tome3
 
 #
 # Delete a novel
-DELETE http://localhost:8080/novel/1
+DELETE http://localhost:8080/novel/2
 
-# GET all novels
+# GET novel summary
 #
 GET http://localhost:8080/novel/summary/1
 
-# Save a new novel
+# Save a novel summary
 #
 POST http://localhost:8080/novel/summary/1
 Content-Type: application/json
